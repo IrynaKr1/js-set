@@ -24,3 +24,16 @@ console.log('Set після видалення 2:', set);
 set.clear();
 
 console.groupEnd();
+
+console.group('--- Завдання 2 ---');
+const arr = [1, 6, 9, 4, 9, 1, 5, 6];
+const arr1 = [5, 10, 11];
+
+const uniq = [...new Set(arr)];
+console.log('Масив унікальних значень', uniq);
+
+// const arrayConcat = [...arr, ...arr1];
+// console.log(arrayConcat);
+const uniqArr = [...new Set([...arr, ...arr1])];
+console.log('Масив унікальних значень, зʼєднаний', uniqArr);
+console.groupEnd();
