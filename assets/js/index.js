@@ -37,3 +37,19 @@ console.log('Масив унікальних значень', uniq);
 const uniqArr = [...new Set([...arr, ...arr1])];
 console.log('Масив унікальних значень, зʼєднаний', uniqArr);
 console.groupEnd();
+
+console.group('--- Завдання 3 ---');
+
+const messages = [
+  { id: 1, name: 'Ivo', message: 'hello', date: new Date() },
+  { id: 2, name: 'Ivo', message: 'how are you', date: new Date() },
+  { id: 3, name: 'Wally', message: 'hi)', date: new Date() },
+  { id: 4, name: 'Wally', message: 'fine)', date: new Date() },
+];
+
+// const userName = messages.map((m => m.name));
+const users = [...new Set(messages.map((m) => m.name))];
+console.log(users);
+
+
+console.groupEnd();
